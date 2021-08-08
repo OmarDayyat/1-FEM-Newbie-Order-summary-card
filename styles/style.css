@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/*==============
+  General
+================*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  font-size: 14px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+}
+
+p {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  color: #7280a7;
+  line-height: 1.5;
+  margin: 20px 0 40px 0;
+}
+
+/*==============
+  Main Container
+================*/
+.main-container {
+  text-align: center;
+  background-color: #f5f7ff;
+  width: 50%;
+  border-radius: 10px;
+}
+
+/*==============
+  Image Container
+================*/
+.image-container {
+  background-image: url("../images/illustration-hero.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 35vh;
+  border-radius: 10px 10px 0 0;
+}
+
+/*==============
+  Info Container
+================*/
+.info-container {
+  padding: 20px 40px;
+}
+
+.info-container a {
+  font-weight: 700;
+}
+
+.info-container .proceed-btn {
+  background-color: #3829e0;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.info-container .proceed-btn:hover {
+  background-color: rgba(56, 41, 224, 0.7);
+}
+
+.cancel-btn {
+  text-decoration: none;
+  color: #7280a7;
+}
+
+.cancel-btn:hover {
+  color: #1f2f56;
+}
+
+/*==============
+  Price Container
+================*/
+.price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.price-container h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  margin: 0 60px 0 20px;
+}
+
+.price-container h4 span {
+  display: block;
+  color: #7280a7;
+}
+
+.change-btn {
+  color: #7280a7;
+}
+
+.change-btn:hover {
+  color: rgba(56, 41, 224, 0.7);
+  text-decoration: none;
+}
+
+/*==============
+  Attribution
+================*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

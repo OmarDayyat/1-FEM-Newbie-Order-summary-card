@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 /*==============
   General
 ================*/
@@ -8,11 +10,136 @@
   margin: 0;
 }
 
+html{
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $Pale-blue;
+  font-size: 14px;
+  font-family: $font;
+}
 
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: $font;
+  font-weight: 900;
+}
+
+p{
+  font-family: $font;
+  font-weight: 500;
+  color: $Desaturated-blue;
+  line-height: 1.5;
+  margin: 20px 0 40px 0;
+}
+
+/*==============
+  Main Container
+================*/
+
+
+.main-container{
+  text-align: center;
+  background-color: $Very-pale-blue;
+  width: 50%;
+  border-radius: 10px;
+}
+
+/*==============
+  Image Container
+================*/
+
+.image-container{
+  background-image: url("../images/illustration-hero.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 35vh;
+  border-radius: 10px 10px 0 0;
+}
+
+/*==============
+  Info Container
+================*/
+
+.info-container{
+  padding: 20px 40px;
+  a{
+    font-weight: 700;
+  }
+  .proceed-btn{
+    background-color: $Bright-blue;
+    box-shadow: 0 10px 20px hsla(0,0%,0%,0.2);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    &:hover{
+      background-color: $Bright-blue-light;
+    }
+  }
+}
+
+.cancel-btn{
+  text-decoration: none;
+  color: $Desaturated-blue;
+  &:hover{
+    color: $Dark-blue;
+  }
+}
+
+/*==============
+  Price Container
+================*/
+
+.price-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  h4{
+    font-family: $font;
+    font-weight: 700;
+    margin: 0 60px 0 20px;
+    span{
+      display: block;
+      color: $Desaturated-blue;
+    }
+  }
+}
+
+.change-btn{
+  color: $Desaturated-blue;
+  &:hover{
+    color: $Bright-blue-light;
+    text-decoration: none;
+  }
+}
+
+/*==============
+  Attribution
+================*/
 
 .attribution { 
   font-size: 11px;
   text-align: center;
+  margin-top: 20px;
   a { 
     color: hsl(228, 45%, 44%);
    }
