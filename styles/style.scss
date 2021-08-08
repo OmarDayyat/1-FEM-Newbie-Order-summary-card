@@ -58,6 +58,7 @@ p{
   border-radius: 10px;
 }
 
+
 /*==============
   Image Container
 ================*/
@@ -110,6 +111,7 @@ p{
 ================*/
 
 .price-container{
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 40px;
@@ -125,6 +127,8 @@ p{
 }
 
 .change-btn{
+  position: absolute;
+  right: 0;
   color: $Desaturated-blue;
   &:hover{
     color: $Bright-blue-light;
@@ -143,4 +147,22 @@ p{
   a { 
     color: hsl(228, 45%, 44%);
    }
+ }
+
+ @media only screen and (max-width:1024px){
+
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .main-container{
+    text-align: center;
+    background-color: $Very-pale-blue;
+    width: 100%;
+    border-radius: 10px;
+  }
  }
