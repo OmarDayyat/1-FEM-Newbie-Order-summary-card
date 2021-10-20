@@ -40,6 +40,8 @@ p {
 
 span {
   display: block;
+  color: #1f2f56;
+  font-weight: 900;
 }
 
 /*========================================================================================================
@@ -52,10 +54,12 @@ span {
 .card-container {
   background-color: white;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
-  width: 350px;
-  height: 550px;
+  width: 425px;
+  height: 600px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero-image {
@@ -63,7 +67,7 @@ span {
 }
 
 .info-container {
-  padding: 0 30px;
+  padding: 0 50px;
 }
 
 /*========================================================================================================
@@ -80,9 +84,19 @@ span {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f5f7ff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 20px;
   margin: 20px 0;
+}
+
+.change-button {
+  color: #3829e0;
+  font-weight: 700;
+}
+
+.change-button:hover {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.7);
 }
 
 /*========================================================================================================
@@ -104,15 +118,23 @@ span {
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-button:hover {
+  background-color: rgba(56, 41, 224, 0.7);
 }
 
 .cancel-button {
   text-decoration: none;
   color: #7280a7;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+.cancel-button:hover {
+  color: #1f2f56;
 }
 
 /*========================================================================================================
